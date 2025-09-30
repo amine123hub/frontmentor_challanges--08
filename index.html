@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> 
+  <title>Frontend Mentor | NFT preview card component</title>
+
+
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Young+Serif&display=swap');
+
+    *,
+    *::after,
+    *::before {
+      box-sizing: border-box;
+    }
+
+    img,
+    picture,
+    svg,
+    video {
+      display: block;
+      max-block-size: auto;
+      max-inline-size: 100%;
+    }
+
+    :root {
+         /* Primary */
+      --Blue-500: hsl(215, 51%, 70%);
+      --Cyan-400: hsl(178, 100%, 50%);
+
+            /* Neutral */
+      --Blue-950-main-BG: hsl(217, 54%, 11%);
+      --Blue-900-card-BG: hsl(216, 50%, 16%);
+      --Blue-800-line: hsl(215, 32%, 27%);
+      --White: hsl(0, 0%, 100%);
+
+
+    }
+
+    body {
+      min-height: 100vh;
+      max-width: 100%;
+      padding: unset;
+      margin: unset;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--Blue-950-main-BG);
+      font-family: "Outfit, sans-serif";
+    }
+    
+    .card {
+      width: 18rem;
+      aspect-ratio: 3/5;
+      background-color: var(--Blue-900-card-BG);
+      border-radius: 15px;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .card  > * {
+      flex: 1;
+    }
+    .equilibrium  {
+      max-width: 100%;
+    }
+
+    .card > .equilibrium > img {
+      border-radius: 15px;
+    }
+
+    .info > h3 {
+      color: var(--Blue-500);
+      font-weight: 600;
+    }
+
+    .info > p {
+      color: var(--Blue-800-line);
+      font-size: clamp(15px, 16px, 18px);
+    }
+
+    .icons {
+      display: inline-flex;
+      justify-content: space-between;
+      gap: 4rem;
+      margin-top: 2rem;
+      padding: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      
+      
+    }
+
+    .icons > * {
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+      white-space: nowrap;
+      color: var(--Blue-500);
+      font-weight: 600;  
+       
+    }
+
+    .icons > span {
+      font-size: clamp(.9rem, 1rem, 1.1rem);
+    }
+
+    .avatar {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      margin-right: 2.8rem;
+    
+      
+    }
+
+    .avatar > img {
+      max-width: 20%;
+      height: 50%;
+      border: 2px solid #fff;
+      border-radius: 50%;
+    }
+
+     .avatar > h5 {
+       color: var(--Blue-800-line);
+       font-weight: 600;
+     }
+
+      .avatar > h5 > span {
+        color: var(--Blue-500);
+      }
+
+
+
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="equilibrium">
+      <img src="images/image-equilibrium.jpg" alt="">
+    </div>
+    <div class="info">
+      <h3>Equilibrium #3429</h3>
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+    </div>
+
+    <div class="icons">
+      <div class="icons-1">
+        <img src="images/icon-ethereum.svg" >
+        <span>  0.041 ETH</span>
+      </div>
+      <div class="icons-2">
+        <img src="images/icon-clock.svg" >
+        <span>3 days left</span>
+      </div> 
+    </div>
+    <div class="avatar">
+      <img src="images/image-avatar.png" alt="avatar">
+      <h5> Creation of <span class="creator">Jules Wyvern</span></h5>
+
+    </div>
+
+
+    
+    
+  
+    
+   
+
+
+
+
+
+  
+
+
+    
+
+  </div>
+
+ 
+
+</body>
+</html>
